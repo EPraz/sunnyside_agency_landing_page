@@ -1,0 +1,59 @@
+#main {
+    width: 100%;
+    /* border: 1px solid green; */
+    max-width: 1440px;
+    margin: auto;
+}
+#main .m_container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 400px);
+}
+#main .m_container .card {
+    /* border: 1px solid red; */
+    padding: 3.5rem 5rem;
+    background-size: cover;
+    background-position: center 25%;
+    background-repeat: no-repeat;
+}
+#main .m_container .card:nth-child(4) {
+    /* border: 1px solid red; */
+    padding: 3.5rem 3rem;
+    /* background-size: cover; */
+    /* background-position: center 50%; */
+    /* background-repeat: no-repeat; */
+}
+#main .m_container .card h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+}
+#main .m_container .card p {
+    font-size: .8rem;
+    line-height: 1.6;
+    color: var(--very-dark-grayish-blue);
+}
+#main .m_container .card a {
+    text-transform: uppercase;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    color: var(--very-dark-desaturated-blue);
+    font-size: .7rem;
+}
+#main .m_container .card.mixed {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+#main .m_container .card.mixed h2.cyan, 
+#main .m_container .card.mixed p.cyan {
+    color: var(--dark-desaturated-cyan);
+    text-align: center;
+}
+#main .m_container .card.mixed h2.blue,
+#main .m_container .card.mixed p.blue {
+    color: var(--dark-blue);
+    text-align: center;
+}
