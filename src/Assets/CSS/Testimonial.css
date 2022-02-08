@@ -1,5 +1,7 @@
 #testimonial {
   width: 100%;
+  max-width: 1440px;
+  margin: auto;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -30,6 +32,7 @@
   transition: 0.5s;
   position: relative;
 }
+
 #testimonial .t_box:hover {
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
 }
@@ -76,4 +79,22 @@
     font-weight: 600;
     color: var(--grayish-blue);
     font-size: .8rem;
+}
+@media screen and (max-width: 1100px) {
+  #testimonial {
+    height: auto;
+  }
+  #testimonial h2 {
+    text-align: center;
+  }
+  #testimonial .t_container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+}
+@media screen and (max-width: 350px) {
+  #testimonial .t_box {
+    width: 95%;
+  }
 }

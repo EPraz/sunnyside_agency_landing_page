@@ -28,6 +28,7 @@ body {
 }
 * {
   box-sizing: border-box;
+  transition: .5s;
 }
 ul {
   list-style: none;

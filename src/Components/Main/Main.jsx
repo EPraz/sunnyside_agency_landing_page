@@ -1,11 +1,17 @@
 import React from 'react';
 import Card from './Card';
-import egg_image from '../../images/desktop/image-transform.jpg'
-import pink_cup from '../../images/desktop/image-stand-out.jpg'
-import graphic_design_image from '../../images/desktop/image-graphic-design.jpg'
-import photografy_image from '../../images/desktop/image-photography.jpg'
+import egg_image from '../../Assets/images/desktop/image-transform.jpg'
+import pink_cup from '../../Assets/images/desktop/image-stand-out.jpg'
+import graphic_design_image from '../../Assets/images/desktop/image-graphic-design.jpg'
+import photografy_image from '../../Assets/images/desktop/image-photography.jpg'
+// Mobile images
+import photografy_image_mobile from '../../Assets/images/mobile/image-photography.jpg'
+import useMediaQuery from '../../Hooks/useMediaQuery';
 
 const Main = () => {
+
+  const isMobile = useMediaQuery('(max-width: 375px');
+
   return (
     <div id="main">
       <div className="m_container">
@@ -30,7 +36,7 @@ const Main = () => {
         <Card
           title="Photography"
           text="Increase your credibility by getting the most stunning, high-quality photos that improve your business image."
-          bgImage={photografy_image}
+          bgImage={isMobile ? photografy_image_mobile : photografy_image}
           mixedCard={true}
           color="blue"
         />

@@ -4,7 +4,6 @@ const Card_text = (props) => {
 
   const [bgColor, setBgColor] = useState(false);
   const [title, setTitle] = useState(false);
-  const [mixed, setMixed] = useState(false);
 
   const emptyImageProps = () => {
     if (props.bgImage == "") {

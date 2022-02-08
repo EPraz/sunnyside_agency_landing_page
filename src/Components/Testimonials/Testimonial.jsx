@@ -1,8 +1,8 @@
 import React from "react";
 import Card from "./Card";
-import emilyPhoto from "../../images/image-emily.jpg"
-import jenniePhoto from "../../images/image-jennie.jpg"
-import thomasPhoto from "../../images/image-thomas.jpg"
+import emilyPhoto from "../../Assets/images/image-emily.jpg"
+import jenniePhoto from "../../Assets/images/image-jennie.jpg"
+import thomasPhoto from "../../Assets/images/image-thomas.jpg"
 
 const Testimonial = () => {
 

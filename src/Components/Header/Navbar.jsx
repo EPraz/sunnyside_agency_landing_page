@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from '../../images/logo.svg'
+import logo from '../../Assets/images/logo.svg'
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -24,9 +24,9 @@ const Navbar = () => {
                 <span className='nav-icon'></span>
             </label>
             <ul className="menu">
-                <li><a href="#" >About</a></li>
-                <li><a href="#" >Services</a></li>
-                <li><a href="#" >Projects</a></li>
+                <li><a href="#main" >About Us</a></li>
+                <li><a href="#testimonial" >Testimonial</a></li>
+                <li><a href="#gallery" >Gallery</a></li>
                 <li><a href="#" className="special">Contact</a></li>
             </ul>
 

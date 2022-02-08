@@ -18,12 +18,9 @@
     background-repeat: no-repeat;
 }
 #main .m_container .card:nth-child(4) {
-    /* border: 1px solid red; */
     padding: 3.5rem 3rem;
-    /* background-size: cover; */
-    /* background-position: center 50%; */
-    /* background-repeat: no-repeat; */
 }
+
 #main .m_container .card h2 {
     font-family: 'Fraunces', serif;
     font-weight: 900;
@@ -56,4 +53,19 @@
 #main .m_container .card.mixed p.blue {
     color: var(--dark-blue);
     text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    #main .m_container .card {
+        padding: 1rem 2rem;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #main .m_container {
+        display: flex;
+        flex-direction: column;
+    }
 }
